@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="scene">
+    <div class="card" id="card">
+      <div class="face front">
+        <h1>Hello, I'm [Your Name]</h1>
+        <p>Frontend Developer | Designer</p>
+        <button onclick="flipTo('about')">About</button>
+        <button onclick="flipTo('projects')">Projects</button>
+        <button onclick="flipTo('contact')">Contact</button>
+      </div>
+      <div class="face back about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with experience in web technologies. I love building creative and functional interfaces.</p>
+        <button onclick="flipTo('home')">Back</button>
+      </div>
+      <div class="face back projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>Portfolio Website</li>
+          <li>ToDo App</li>
+          <li>Landing Pages</li>
+        </ul>
+        <button onclick="flipTo('home')">Back</button>
+      </div>
+      <div class="face back contact">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <p>LinkedIn: your-link</p>
+        <button onclick="flipTo('home')">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
